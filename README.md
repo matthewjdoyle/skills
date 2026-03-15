@@ -1,2 +1,3 @@
 # skills
-Skills for agents.
+
+Skills for agents like claude, gemini cli, copilot etc.
