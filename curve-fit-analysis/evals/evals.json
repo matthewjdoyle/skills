@@ -1,0 +1,23 @@
+{
+  "skill_name": "curve-fit-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a CSV of Hall-effect calibration data with columns field_T, voltage_V, and voltage_err_V. Compare linear, quadratic, and exponential fits, tell me whether the full field range should be used, and report the final parameters with reduced chi-squared.",
+      "expected_output": "Runs a multi-model curve_fit analysis on the common range, reports parameter uncertainties and reduced chi-squared, and explains whether a narrower fit window is justified.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Please analyse this diode I-V dataset. I suspect the low-current region is exponential but the high-current region transitions to a different regime. Use scipy curve_fit, decide whether two fits are needed, and compare the piecewise result against the best single global fit.",
+      "expected_output": "Evaluates candidate models, checks for a breakpoint, and clearly states whether a two-regime fit is materially better than one global fit.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Fit this spectroscopy peak dataset and tell me whether a Gaussian or Lorentzian is more appropriate. I only care about the peak region, not the far background, so choose the fit range carefully and show the error analysis.",
+      "expected_output": "Selects a sensible local fit window, compares Gaussian and Lorentzian models, and reports uncertainties, chi-squared diagnostics, and the rationale for the chosen range.",
+      "files": []
+    }
+  ]
+}

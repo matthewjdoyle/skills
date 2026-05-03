@@ -1,0 +1,27 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python tooling caches and reports
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Local virtual environments
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+
+# Generated skill evaluation workspaces
+*-workspace/

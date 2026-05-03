@@ -1,0 +1,19 @@
+{
+  "skill_name": "ts-large-file-refactor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Refactor the file ts-large-file-refactor/test_data/LandingPage.tsx to reduce its size and isolate content, types, and constants.",
+      "expected_output": "The LandingPage.tsx should be broken down into a folder with a LandingPage.content.ts, LandingPage.types.ts, LandingPage.constants.ts, and an index.tsx.",
+      "files": ["ts-large-file-refactor/test_data/LandingPage.tsx"],
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "prompt": "Refactor the massive file ts-large-file-refactor/test_data/Dashboard.tsx. It's over 1000 lines long. Extract all types into a types file, constants into a constants file, and hardcoded UI text into a content file. Leave the main component logic in index.tsx.",
+      "expected_output": "The file is split into multiple files: Dashboard.types.ts, Dashboard.constants.ts, Dashboard.content.ts, and an index.tsx file for the component.",
+      "files": ["ts-large-file-refactor/test_data/Dashboard.tsx"],
+      "assertions": []
+    }
+  ]
+}
